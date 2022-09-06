@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Best Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Update these with your own font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;900&family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">home</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">contact</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">about</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">my work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Intro-->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Let's <strong>talk about</strong> 
+        </h1>
+        <p class="section__subtitle section__subtitle--intro" id="message">
+            <span 
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate=' ["content creation", "collaboration", "design", "development"]'></span>
+        </p>
+        <img src="img/headshots/headshot_v002.png" alt="a picture of Ben Best" class="intro__img">
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="contact-form">
+            <h2>Get in contact</h2>
+            <p>I am available for freelance work!</p>
+            <form action="">
+                <input type="text" placeholder="name" id="contact-name" required>
+                <input type="email" name="email" id="contact-email" placeholder="email" required>
+                <input type="text" name="phone" id="contact-phone" placeholder="phone" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="message" required></textarea>
+                <input type="submit" name="" value="Submit" id="contact-btn" class="btn">
+            </form>
+        </div>
+
+        <div class="contact-img">
+            <img src="https://images.unsplash.com/photo-1547280746-0e984cc4ca31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1187&q=80" alt="shadow standing infront of pink vectors" srcset="">
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- replace with your own email address -->
+        <a href="mailto:benbest@dev.com" class="footer-link">benbest@dev.com</a>
+        <ul class="social-list">
+            <li class="social-list__item" id="social-github">
+                <a href="https://github.com/rosygl0w" class="social-list__link" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <!-- Comment Out - Instagram
+
+            <li class="social-list__item">
+                <a href="#home" class="social-list__link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+
+            -->
+            <li class="social-list__item" id="social-linkedin">
+                <a href="https://www.linkedin.com/in/benjaminoliverbest/" class="social-list__link" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <!-- Comment Out - Twitter
+
+            <li class="social-list__item">
+                <a href="#home" class="social-list__link">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            -->
+
+        </ul>
+    </footer>
+
+    <!-- javascript -->
+    <script src="javascript/script.js"></script>
+
+</body>
+</html>

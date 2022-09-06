@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Best Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Update these with your own font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;900&family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">home</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">contact</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">about</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">my work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Intro-->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I'm <strong>Ben Best</strong> 
+        </h1>
+        <p class="section__subtitle section__subtitle--intro" id="message">
+            <span 
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate=' ["creator", "developer", "storyteller"]'></span>
+        </p>
+        <img src="img/headshots/headshot_v002.png" alt="a picture of Ben Best" class="intro__img">
+    </section>
+
+    <!--Services-->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+
+            <div class="service">
+                <h3>Content Creation</h3>
+                <p>I value brand-authentic content, clean designs, and impactful engagement.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>MarComm Strategy</h3>
+                <p>I analyze constituent data to craft audience-centric messaging and processes.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Storytelling</h3>
+                <p>I'm passionate about connecting with inspiring individuals and organizations to share what motivates them with the world.</p>
+            </div> <!-- / service -->
+        </div>
+        
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!--About-->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Digital Media & MarComm Professional</p>
+
+        <div class="about-me__body read-more-container">
+            <div class="container">
+            <p>I got my start online running a forum for people looking to teach themselves Photoshop before the advent of modern social media.</p>
+            <p>In 2010, I launched my first personal blog on Tumblr, and by 2013 had amassed a following of 25,000+. This was the perfect crash course to learn key MarComm concepts; copywriting, coding, content creation, SEO and more.</p>
+            <p>I graduated from the <a href="https://kutztown.edu/" target="_blank" id="text-link">Kutztown University of Pennsylvania</a> in 2018 with a BA in Communications Studies and minors in New Media & Digital Communications, Professional Writing and Public Relations.</p>
+        <span class="read-more-text">
+            <p>Soon after graduating, I started working at the <a href="https://www.kuf.org/" target="_blank" id="text-link">Kutztown University Foundation</a>, where I’m currently the Assistant Director of Communications. My position is essential in telling the stories of alumni, donors, students and friends and communicating the impact of philanthropy at KU.</p>
+            <p>During my time at the KU Foundation, I have implemented communication strategies for record-breaking giving days and crowdfunding campaigns, boosted social media audience and engagement metrics, rebranded and managed multiple KU Foundation-related websites, and led virtual volunteer workshops based on digital communication best practices to empower the KU Community and its micro-influencers.</p>
+        </span>
+        <span class="read-more-btn btn">Read More</span>
+            </div>
+        </div>
+
+        <img src="img/headshots/headshot_v003.png" alt="" class="about-me__img">
+    </section>
+
+    <!--My Work-->
+    <section class="my-work" id="work">
+        <h2 class="section__title">My Work</h2>
+        <p class="section__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="portfolio">
+            <!--Portfolio Item 01-->
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="https://images.unsplash.com/photo-1603847734787-9e8a3f3e9d60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" class="portfolio__img">
+            </a>
+
+             <!--Portfolio Item 02-->
+             <a href="#" class="portfolio__item">
+                <img src="https://images.unsplash.com/photo-1556139902-7367723b7e9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" class="portfolio__img">
+            </a>
+
+             <!--Portfolio Item 03-->
+             <a href="#" class="portfolio__item">
+                <img src="https://images.unsplash.com/photo-1548350896-fafc317d3ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" class="portfolio__img">
+            </a>
+
+             <!--Portfolio Item 04-->
+             <a href="#" class="portfolio__item">
+                <img src="https://images.unsplash.com/photo-1553949333-0510da388b82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" alt="" class="portfolio__img">
+            </a>
+
+             <!--Portfolio Item 05-->
+             <a href="#" class="portfolio__item">
+                <img src="https://images.unsplash.com/photo-1618386230353-3631c1365be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio Item 06-->
+            <a href="#" class="portfolio__item">
+                <img src="https://images.unsplash.com/photo-1580610447943-1bfbef5efe07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- replace with your own email address -->
+        <a href="mailto:benbest@dev.com" class="footer-link">benbest@dev.com</a>
+        <ul class="social-list">
+            <li class="social-list__item" id="social-github">
+                <a href="https://github.com/rosygl0w" class="social-list__link" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <!-- Comment Out - Instagram
+
+            <li class="social-list__item">
+                <a href="#home" class="social-list__link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+
+            -->
+            <li class="social-list__item" id="social-linkedin">
+                <a href="https://www.linkedin.com/in/benjaminoliverbest/" class="social-list__link" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <!-- Comment Out - Twitter
+
+            <li class="social-list__item">
+                <a href="#home" class="social-list__link">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            -->
+
+        </ul>
+    </footer>
+
+    <!-- javascript -->
+    <script src="javascript/script.js"></script>
+
+</body>
+</html>
